@@ -86,7 +86,7 @@ function vitePluginStorageProxy(): Plugin {
 
 // --- Configuración Final ---
 export default defineConfig({
-  base: '/legalprohn.com/',
+  base: '/',
   plugins: [
     react(), 
     tailwindcss(), 
