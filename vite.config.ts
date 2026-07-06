@@ -207,7 +207,14 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 
 export default defineConfig({
   base: '/legalprohn.com/',
-  plugins,
+  plugins: [
+    react(), 
+    tailwindcss(), 
+    jsxLocPlugin(), 
+    vitePluginManusRuntime(), 
+    vitePluginManusDebugCollector(), 
+    vitePluginStorageProxy()
+  ],
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
