@@ -3,18 +3,17 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import fs from "node:fs";
 import path from "node:path";
-import { defineConfig, type Plugin, type ViteDevServer } from "vite";
+import { defineConfig } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-// ... (Mantén aquí todas tus funciones: trimLogFile, writeToLogFile, vitePluginManusDebugCollector, vitePluginStorageProxy)
-// He omitido el cuerpo de las funciones para brevedad, pero asegúrate de incluirlas como las tenías.
+// ... (Aquí mantén tus funciones: trimLogFile, writeToLogFile, etc. exactamente como las tienes)
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
   base: '/legalprohn.com/',
   plugins,
-  root: './', // Asegúrate de que index.html esté en la raíz de tu proyecto
+  root: './',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
