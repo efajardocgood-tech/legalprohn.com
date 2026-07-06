@@ -206,15 +206,8 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: './',
-  plugins: [
-    react(), 
-    tailwindcss(), 
-    jsxLocPlugin(), 
-    vitePluginManusRuntime(), 
-    vitePluginManusDebugCollector(), 
-    vitePluginStorageProxy()
-  ],
+  base: '/legalprohn.com/',
+  plugins,
   resolve: {
     alias: {
       "@": path.resolve(import.meta.dirname, "client", "src"),
