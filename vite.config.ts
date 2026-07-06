@@ -6,16 +6,13 @@ import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-// 1. FUNCIONES Y PLUGINS (Definición obligatoria antes de usarlos)
+// --- Funciones auxiliares definidas arriba ---
 const PROJECT_ROOT = import.meta.dirname;
 const LOG_DIR = path.join(PROJECT_ROOT, ".manus-logs");
 const MAX_LOG_SIZE_BYTES = 1 * 1024 * 1024;
 const TRIM_TARGET_BYTES = Math.floor(MAX_LOG_SIZE_BYTES * 0.6);
 
-function ensureLogDir() {
-  if (!fs.existsSync(LOG_DIR)) fs.mkdirSync(LOG_DIR, { recursive: true });
-}
-
+function ensureLogDir() { if (!fs.existsSync(LOG_DIR)) fs.mkdirSync(LOG_DIR, { recursive: true }); }
 function trimLogFile(logPath: string, maxSize: number) {
   try {
     if (!fs.existsSync(logPath) || fs.statSync(logPath).size <= maxSize) return;
@@ -87,19 +84,26 @@ function vitePluginStorageProxy(): Plugin {
   };
 }
 
-// 2. CONFIGURACIÓN
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
-
+// --- Configuración Final ---
 export default defineConfig({
   base: '/legalprohn.com/',
-  plugins,
-  root: 'client', // Vite buscará index.html dentro de la carpeta 'client'
+  plugins: [
+    react(), 
+    tailwindcss(), 
+    jsxLocPlugin(), 
+    vitePluginManusRuntime(), 
+    vitePluginManusDebugCollector(), 
+    vitePluginStorageProxy()
+  ],
+  root: './',
   build: {
-    outDir: '../dist', // Genera la carpeta dist en la raíz para que GitHub la encuentre
+    outDir: 'dist',
     emptyOutDir: true,
   },
   server: {
     port: 3000,
     host: true,
+    allowedHosts: [".manuspre.computer", ".manus.computer", ".manus-asia.computer", ".manuscomputer.ai", ".manusvm.computer", "localhost", "127.0.0.1"],
+    fs: { strict: true, deny: ["**/.*"] },
   },
 });
