@@ -1,5 +1,4 @@
-name: Compilar y Desplegar React/Vite a GitHub Pages
-
+name: Compilar y Desplegar
 on:
   push:
     branches: ["main"]
@@ -26,7 +25,7 @@ jobs:
         with:
           node-version: 20
 
-      - name: Instalar dependencias y compilar
+      - name: Instalar y Compilar
         run: |
           npm install --legacy-peer-deps
           npm run build
