@@ -37,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Esto toma el contenido DE DENTRO de dist y lo pone en la raíz
+          path: './dist' # Esto debe coincidir con el outDir que pusimos en el paso anterior
   deploy:
     environment:
       name: github-pages
