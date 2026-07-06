@@ -95,9 +95,14 @@ export default defineConfig({
     vitePluginManusDebugCollector(), 
     vitePluginStorageProxy()
   ],
-  root: './client',    // <--- CAMBIO 1: Dile que entre a la carpeta client
+  resolve: {                                                          // <--- NUEVO BLOQUE INICIO
+    alias: {                                                          // <---
+      "@": path.resolve(import.meta.dirname, "./client/src"),         // <---
+    },                                                                // <---
+  },                                                                  // <--- NUEVO BLOQUE FIN
+  root: './client',
   build: {
-    outDir: '../dist', // <--- CAMBIO 2: Dile que guarde el resultado un nivel atrás (en la raíz)
+    outDir: '../dist',
     emptyOutDir: true,
   },
   server: {
