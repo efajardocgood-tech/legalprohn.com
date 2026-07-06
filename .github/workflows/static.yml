@@ -28,7 +28,7 @@ jobs:
 
       - name: Instalar dependencias y compilar el proyecto
         run: |
-          npm install
+          npm install --legacy-peer-deps
           npm run build
 
       - name: Configurar Pages
