@@ -31,13 +31,13 @@ jobs:
           npm install --legacy-peer-deps
           npm run build
 
-      - name: Configurar Pages
-        uses: actions/configure-pages@v5
+      - name: Build
+        run: npm run build # Asegúrate de que este comando genere la carpeta dist
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './dist' # Esto toma el contenido DE DENTRO de dist y lo pone en la raíz
   deploy:
     environment:
       name: github-pages
