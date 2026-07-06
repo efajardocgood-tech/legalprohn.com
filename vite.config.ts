@@ -93,8 +93,11 @@ const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(
 export default defineConfig({
   base: '/legalprohn.com/',
   plugins,
-  root: './',
-  build: { outDir: 'dist', emptyOutDir: true },
+  root: 'client', // Vite buscará index.html dentro de la carpeta 'client'
+  build: {
+    outDir: '../dist', // Genera la carpeta dist en la raíz para que GitHub la encuentre
+    emptyOutDir: true,
+  },
   server: {
     port: 3000,
     host: true,
