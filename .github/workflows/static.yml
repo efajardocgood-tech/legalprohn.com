@@ -26,18 +26,16 @@ jobs:
         with:
           node-version: 20
 
-      - name: Instalar dependencias y compilar el proyecto
+      - name: Instalar dependencias y compilar
         run: |
           npm install --legacy-peer-deps
           npm run build
-
-      - name: Build
-        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: './dist'
+
   deploy:
     environment:
       name: github-pages
