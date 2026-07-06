@@ -34,10 +34,10 @@ jobs:
       - name: Configurar Pages
         uses: actions/configure-pages@v5
 
-      - name: Subir carpeta compilada
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist/public'
+          path: './dist'
   deploy:
     environment:
       name: github-pages
