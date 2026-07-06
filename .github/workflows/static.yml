@@ -37,8 +37,7 @@ jobs:
       - name: Subir carpeta compilada
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Si falla, cámbialo por './client/dist'
-
+          path: './dist/public'
   deploy:
     environment:
       name: github-pages
