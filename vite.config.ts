@@ -95,9 +95,9 @@ export default defineConfig({
     vitePluginManusDebugCollector(), 
     vitePluginStorageProxy()
   ],
-  root: './',
+  root: './client',    // <--- CAMBIO 1: Dile que entre a la carpeta client
   build: {
-    outDir: 'dist',
+    outDir: '../dist', // <--- CAMBIO 2: Dile que guarde el resultado un nivel atrás (en la raíz)
     emptyOutDir: true,
   },
   server: {
