@@ -206,12 +206,15 @@ function vitePluginStorageProxy(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector(), vitePluginStorageProxy()];
 
 export default defineConfig({
-  base: '/legalprohn.com/', // Fundamental: base correcta
+  base: '/legalprohn.com/',
   plugins,
+  root: './', // Esto le dice a Vite que el proyecto está en la raíz
   build: {
-    outDir: 'dist', // Simple: solo 'dist'
+    outDir: 'dist', // Esto genera la carpeta dist en la raíz
     emptyOutDir: true,
   },
+  // ... resto de tu configuración
+})
   server: {
     port: 3000,
     strictPort: false, // Will find next available port if 3000 is busy
