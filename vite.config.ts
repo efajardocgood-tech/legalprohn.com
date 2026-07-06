@@ -209,7 +209,7 @@ export default defineConfig({
   base: '/legalprohn.com/', // Fundamental: base correcta
   plugins,
   build: {
-    outDir: 'dist', // Todo irá directo a una carpeta llamada dist
+    outDir: 'dist', // Simple: solo 'dist'
     emptyOutDir: true,
   },
   server: {
