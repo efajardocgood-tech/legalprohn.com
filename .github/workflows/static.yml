@@ -32,12 +32,12 @@ jobs:
           npm run build
 
       - name: Build
-        run: npm run build # Asegúrate de que este comando genere la carpeta dist
+        run: npm run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist' # Esto debe coincidir con el outDir que pusimos en el paso anterior
+          path: './dist'
   deploy:
     environment:
       name: github-pages
