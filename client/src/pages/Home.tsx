@@ -69,7 +69,7 @@ const handleSubmit = (e: React.FormEvent) => {
               Asesoría jurídica especializada que te blinda contra riesgos legales y maximiza tus oportunidades comerciales.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="btn-cta text-lg py-4 px-8" onClick={() => setIsCalendlyOpen(true)}>
+              <Button className="btn-cta text-lg py-4 px-8" onClick={() => window.open('https://wa.me/50493812079?text=Hola,%20Abogado%20Fajardo.%20Me%20interesa%20agendar%20una%20consulta%20legal.', '_blank')}>
                 Agendar Consultoría
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
@@ -172,10 +172,10 @@ const handleSubmit = (e: React.FormEvent) => {
                 ¡Listo para atenderte!
               </p>
               <p className="text-lg text-gray-300 mb-8 leading-relaxed">
-                Con años de experiencia en derecho, me dedico a proteger las inversiones y derechos de mis clientes. Mi enfoque es simple: soluciones claras, sin complicaciones, orientadas a resultados.
+                Con varios años de experiencia en derecho, me dedico a proteger las inversiones y derechos de mis clientes. Mi enfoque es simple: soluciones claras, sin complicaciones, orientadas a resultados.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button className="btn-cta text-lg py-3 px-8" onClick={() => setIsCalendlyOpen(true)}>
+                <Button className="btn-cta text-lg py-3 px-8" onClick={() => window.open('https://wa.me/50493812079?text=Hola,%20Abogado%20Fajardo.%20Me%20interesa%20agendar%20una%20consulta%20legal.', '_blank')}>
                   Agendar Consulta Ahora
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
@@ -191,7 +191,7 @@ const handleSubmit = (e: React.FormEvent) => {
           <div className="section-header">
             <h2 className="section-title">Nuestro Proceso: 3 Pasos Simples</h2>
             <p className="section-subtitle">
-              Adiós a la incertidumbre. Aquí está exactamente cómo trabajamos contigo.
+              Adiós a la incertidumbre. Aquí está exactamente cómo trabajo contigo.
             </p>
           </div>
 
@@ -225,7 +225,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   Diseño de Estrategia
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Diseñamos tu estrategia jurídica o plan de blindaje a la medida. Cada solución es única y adaptada a tu negocio.
+                  Diseño una estrategia jurídica o plan personalizado para blindar a la medida. Cada solución es única y adaptada a tu negocio.
                 </p>
               </div>
               {/* Flecha */}
@@ -256,9 +256,9 @@ const handleSubmit = (e: React.FormEvent) => {
       <section id="testimonios" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="section-header">
-            <h2 className="section-title">Lo Que Dicen Nuestros Clientes</h2>
+            <h2 className="section-title">Lo Que Dicen Mis Clientes</h2>
             <p className="section-subtitle">
-              Empresarios y profesionales que han blindado sus negocios con nuestra asesoría.
+              Empresarios y profesionales que han blindado sus negocios con mi asesoría.
             </p>
           </div>
 
@@ -272,7 +272,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic leading-relaxed">
-                  "Blindaron mi empresa en 3 semanas. El proceso fue transparente y sin sorpresas. Ahora duermo tranquilo sabiendo que mis activos están protegidos."
+                  "Blindó mi empresa en 3 semanas. El proceso fue transparente y sin sorpresas. Ahora duermo tranquilo sabiendo que mis activos están protegidos."
                 </p>
                 <div className="border-t border-gray-300 pt-4">
                   <p className="font-bold text-[#005CBB]">Empresario de Construcción</p>
@@ -290,7 +290,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic leading-relaxed">
-                  "Resolvieron una disputa contractual que me tenía bloqueado. Ágiles, profesionales y con resultados reales. Los recomiendo al 100%."
+                  "El abogado Fajardo me ayudo a resolver una disputa contractual que me tenía bloqueado. Es muy Ágil, profesional y con resultados reales. Lo recomiendo al 100%."
                 </p>
                 <div className="border-t border-gray-300 pt-4">
                   <p className="font-bold text-[#005CBB]">Dueño de Plataforma Digital</p>
@@ -308,7 +308,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   ))}
                 </div>
                 <p className="text-gray-700 mb-6 italic leading-relaxed">
-                  "Excelente atención. Explicaron cada paso en términos claros, no en tecnicismos. Muy satisfecho con el resultado final."
+                  "Excelente atención. El abogado Eduardo me explicó cada paso en términos claros, no en tecnicismos. Muy satisfecho con el resultado final."
                 </p>
                 <div className="border-t border-gray-300 pt-4">
                   <p className="font-bold text-[#005CBB]">Gerente de PYME</p>
@@ -395,7 +395,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 </Button>
 
                 <p className="text-xs text-gray-500 text-center">
-                  Garantizamos confidencialidad total. Tu información está segura con nosotros.
+                  Garantizo confidencialidad total. Tu información está segura conmigo.
                 </p>
               </form>
             </div>
@@ -409,7 +409,7 @@ const handleSubmit = (e: React.FormEvent) => {
           <div className="section-header">
             <h2 className="section-title">Preguntas Frecuentes</h2>
             <p className="section-subtitle">
-              Resolvemos tus dudas sobre confidencialidad, tiempos y procesos.
+              Resuelvo tus dudas sobre confidencialidad, tiempos y procesos.
             </p>
           </div>
 
@@ -421,7 +421,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   ¿Está garantizada la confidencialidad de mi información?
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Absolutamente. Cumplimos estrictamente con el secreto profesional. Toda la información que compartas está protegida bajo las normas legales más rigurosas. Nunca compartimos datos de clientes con terceros.
+                  Absolutamente. Se cumplen estrictamente con el secreto profesional. Toda la información que compartas está protegida bajo las normas legales más rigurosas. Nunca se comparten datos de clientes con terceros.
                 </p>
               </CardContent>
             </Card>
@@ -486,7 +486,7 @@ const handleSubmit = (e: React.FormEvent) => {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             No esperes a que un problema legal te paralice. Actúa hoy y protege tu futuro.
           </p>
-          <Button className="btn-cta text-lg py-4 px-10" onClick={() => setIsCalendlyOpen(true)}>
+          <Button className="btn-cta text-lg py-4 px-10" onClick={() => window.open('https://wa.me/50493812079?text=Hola,%20Abogado%20Fajardo.%20Me%20interesa%20agendar%20una%20consulta%20legal.', '_blank')}>
             Agendar Consultoría Ahora
             <ArrowRight className="ml-2 w-5 h-5" />
           </Button>
@@ -506,7 +506,7 @@ const handleSubmit = (e: React.FormEvent) => {
                 </h3>
               </div>
               <p className="text-gray-400">
-                Asesoría jurídica especializada para empresarios que no quieren complicaciones.
+                Asesoría jurídica especializada para empresarios y particulares que no quieren complicaciones.
               </p>
             </div>
 
