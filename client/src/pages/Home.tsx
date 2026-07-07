@@ -177,7 +177,7 @@ const handleSubmit = (e: React.FormEvent) => {
             <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
               <CardContent className="pt-8">
                 <h3 className="text-xl font-bold text-[#0A192F] mb-4" style={{ fontFamily: "'Lora', serif" }}>
-                  ASeoria Empresarial y PYME
+                  Aseoria Empresarial y PYME
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed mb-6">
                   Contratos Estratégicos,Redacción de Contratos de Trabajo, Redacción, revisión y negociación de contratos comerciales B2B, acuerdos de confidencialidad (NDA), Elaboación de Reglamentos Internos, arrendamientos y distribución.
