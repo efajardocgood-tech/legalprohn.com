@@ -445,7 +445,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   ¿Cuáles son los métodos de pago aceptados?
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Aceptamos transferencias bancarias, tarjetas de crédito/débito y depósitos en efectivo. Ofrecemos planes de pago flexibles para proyectos grandes. Consulta sin costo en la primera sesión.
+                  Transferencias bancarias y depósitos en efectivo. Ofrezco planes flexibles para proyectos grandes. Consulta sin costo estos planes para empresas, PYME o personal.
                 </p>
               </CardContent>
             </Card>
