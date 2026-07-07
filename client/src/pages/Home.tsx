@@ -37,7 +37,7 @@ export default function Home() {
       <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
         <div className="container mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <img src="/manus-storage/Gemini_Generated_Image_kao3jikao3jikao3_e98e269c.png" alt="Logo" className="w-10 h-10" />
+            <img src="/__manus__/Logo (3).png" alt="Logo" className="w-10 h-10" />
             <span className="text-2xl font-bold text-[#005CBB]" style={{ fontFamily: "'Lora', serif" }}>Abogado Fajardo</span>
           </div>
           <nav className="hidden md:flex gap-8 text-gray-700">
@@ -46,7 +46,7 @@ export default function Home() {
             <a href="#testimonios" className="hover:text-[#005CBB] transition">Testimonios</a>
             <a href="#faq" className="hover:text-[#005CBB] transition">FAQ</a>
           </nav>
-            <Button className="btn-cta hidden md:block" onClick={() => setIsCalendlyOpen(true)}>Agendar Consulta</Button>
+            <Button className="btn-cta hidden md:block" onClick={() => window.open('https://wa.me/50493812079?text=Hola,%20Abogado%20Fajardo.%20Me%20interesa%20agendar%20una%20consulta%20legal.', '_blank')}>Agendar Consulta</Button>
         </div>
       </header>
 
@@ -54,7 +54,7 @@ export default function Home() {
       <section className="relative bg-[#0A192F] text-white py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <img
-            src="/manus-storage/FioMi8PusJfO_d319e48d.jpg"
+            src="/__manus__/Eduardo Fajardo.jpeg"
             alt="Oficina Legal"
             className="w-full h-full object-cover"
           />
@@ -155,7 +155,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute inset-0 bg-[#00A8E8] rounded-2xl transform rotate-3 blur-sm" />
                 <img
-                  src="/manus-storage/eduardo_fajardo_no_bg_59f69dd9.png"
+                  src="/__manus__/Eduardo Fajardo.jpeg"
                   alt="Eduardo Fajardo"
                   className="relative w-full max-w-md rounded-2xl shadow-2xl"
                 />
@@ -499,7 +499,7 @@ export default function Home() {
             {/* Columna 1 - Branding */}
             <div>
               <div className="flex items-center gap-3 mb-4">
-                <img src="/manus-storage/Gemini_Generated_Image_kao3jikao3jikao3_e98e269c.png" alt="Logo" className="w-12 h-12" />
+                <img src="/__manus__/Logo (3).png" alt="Logo" className="w-12 h-12" />
                 <h3 className="text-2xl font-bold text-[#00A8E8]" style={{ fontFamily: "'Lora', serif" }}>
                   Abogado Fajardo
                 </h3>
