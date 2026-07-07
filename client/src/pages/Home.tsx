@@ -23,10 +23,11 @@ export default function Home() {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Formulario enviado:", formData);
-    alert("Gracias por tu consulta. Nos pondremos en contacto pronto.");
+    const mensaje = `Hola, mi nombre es ${formData.nombre}. \nMi correo es: ${formData.email}. \nMi teléfono es: ${formData.telefono}. \n\nNecesito asesoría por lo siguiente: ${formData.motivo}`;
+    const whatsappUrl = `https://wa.me/50493812079?text=${encodeURIComponent(mensaje)}`;
+    window.open(whatsappUrl, '_blank');
     setFormData({ nombre: "", email: "", telefono: "", motivo: "" });
   };
 
