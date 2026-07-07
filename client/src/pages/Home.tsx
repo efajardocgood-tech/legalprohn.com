@@ -92,9 +92,9 @@ const handleSubmit = (e: React.FormEvent) => {
       <section id="beneficios" className="py-20 md:py-32 bg-white">
         <div className="container mx-auto px-4">
           <div className="section-header">
-            <h2 className="section-title">¿Por Qué Elegirnos?</h2>
+            <h2 className="section-title">El valor de una representación transparente</h2>
             <p className="section-subtitle">
-              Soluciones legales diseñadas para empresarios y profesionales que no quieren complicaciones.
+              "Ofrezco asesoría jurídica estratégica y representación integral, diseñada tanto para las exigencias del sector corporativo como para las necesidades legales de particulares. Mi compromiso es brindarle certeza, protección patrimonial y un acompañamiento ético en cada etapa de su vida o de su negocio. Me dedico a transformar la complejidad legal en soluciones claras y seguras."
             </p>
           </div>
 
@@ -109,7 +109,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   Blindaje Legal Integral
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Protección y blindaje de activos comerciales. Estructuramos tu negocio para minimizar riesgos legales.
+                  Protejo lo que más le importa: su patrimonio personal y su negocio. Me anticipo a los riesgos legales para que usted pueda enfocarse en sus metas con total tranquilidad y seguridad.
                 </p>
               </CardContent>
             </Card>
@@ -124,7 +124,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   Proceso Ágil y Transparente
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Sin burocracia innecesaria. Sabemos exactamente cuánto tiempo toma cada gestión y te mantenemos informado.
+                  Sin burocracia innecesaria. Le hablo con claridad sobre los tiempos reales de sus trámites y lo mantengo informado paso a paso hasta llegar a la solución que necesita.
                 </p>
               </CardContent>
             </Card>
@@ -139,7 +139,7 @@ const handleSubmit = (e: React.FormEvent) => {
                   Especialización Comprobada
                 </h3>
                 <p className="text-gray-600 leading-relaxed">
-                  Enfoque hiper-especializado en derecho corporativo y disputas comerciales. Cobro de honorarios competitivos.
+                  Con trayectoria resolviendo desde disputas comerciales hasta asuntos personales. Le garantizo un trato directo, estratégico y con honorarios claros desde el primer día.
                 </p>
               </CardContent>
             </Card>
