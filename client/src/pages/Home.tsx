@@ -43,6 +43,7 @@ const handleSubmit = (e: React.FormEvent) => {
           </div>
           <nav className="hidden md:flex gap-8 text-gray-700">
             <a href="#beneficios" className="hover:text-[#005CBB] transition">Beneficios</a>
+            <a href="#servicios" className="hover:text-[#005CBB] transition">Servicios</a>
             <a href="#proceso" className="hover:text-[#005CBB] transition">Proceso</a>
             <a href="#testimonios" className="hover:text-[#005CBB] transition">Testimonios</a>
             <a href="#faq" className="hover:text-[#005CBB] transition">FAQ</a>
@@ -146,7 +147,81 @@ const handleSubmit = (e: React.FormEvent) => {
           </div>
         </div>
       </section>
+      
+{/* SECCIÓN DE SERVICIOS PROFESIONALES */}
+      <section id="servicios" className="py-20 md:py-32 bg-[#F8F9FA]">
+        <div className="container mx-auto px-4">
+          <div className="section-header text-center mb-16">
+            <h2 className="section-title text-3xl md:text-4xl font-bold text-[#005CBB] mb-4" style={{ fontFamily: "'Lora', serif" }}>
+             Mis Servicios Profesionales
+            </h2>
+            <p className="section-subtitle text-gray-600 max-w-2xl mx-auto">
+              Asesoría Legal Integral (Personal y Corporativa)
+            </p>
+          </div>
 
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Servicio 1 */}
+            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+              <CardContent className="pt-8">
+                <h3 className="text-xl font-bold text-[#0A192F] mb-4" style={{ fontFamily: "'Lora', serif" }}>
+                   Gestión de Trámites Notariales
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                 Autenticas, Apostillas, Protocolización de actas, traspasos y compraventas de bienes y vehículos, autorización de salida de menores, Matrimonios, Divorcios, Declaración de Herederos. 
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Servicio 2 */}
+            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+              <CardContent className="pt-8">
+                <h3 className="text-xl font-bold text-[#0A192F] mb-4" style={{ fontFamily: "'Lora', serif" }}>
+                  ASeoria Empresarial y PYME
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Contratos Estratégicos,Redacción de Contratos de Trabajo, Redacción, revisión y negociación de contratos comerciales B2B, acuerdos de confidencialidad (NDA), Elaboación de Reglamentos Internos, arrendamientos y distribución.
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Servicio 3 */}
+            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+              <CardContent className="pt-8">
+                <h3 className="text-xl font-bold text-[#0A192F] mb-4" style={{ fontFamily: "'Lora', serif" }}>
+                  Derecho de Familia
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Divorcios, Demanda de Alimentos, Reconocimiento Forzoso de Paternidad, Demanda por Guarda Y Custodia. 
+                </p>
+              </CardContent>
+            </Card>
+
+            {/* Servicio 4 */}
+            <Card className="bg-white border border-gray-100 shadow-sm hover:shadow-md transition duration-300">
+              <CardContent className="pt-8">
+                <h3 className="text-xl font-bold text-[#0A192F] mb-4" style={{ fontFamily: "'Lora', serif" }}>
+                  Litigios, Arbitrajes comerciales y Civiles
+                </h3>
+                <p className="text-gray-600 text-sm leading-relaxed mb-6">
+                  Representación legal eficiente en disputas contractuales, cobros judiciales y resolución alternativa de conflictos comerciales, Declaración de Herederos. 
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+          
+          <div className="text-center mt-12">
+            <Button 
+              className="btn-cta text-md py-3 px-8"
+              onClick={() => window.open('https://wa.me/50493812079?text=Hola,%20Abogado%20Fajardo.%20Deseo%20cotizar%20uno%20de%20sus%20servicios%20profesionales.', '_blank')}
+            >
+              Consultar por un Servicio Específico
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Button>
+          </div>
+        </div>
+      </section>
+      
       {/* SECCIÓN DE PRESENTACIÓN PERSONAL */}
       <section className="py-20 md:py-32 bg-gradient-to-r from-[#0A192F] to-[#0B1B3D] text-white">
         <div className="container mx-auto px-4">
