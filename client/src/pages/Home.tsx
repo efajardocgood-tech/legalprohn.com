@@ -25,9 +25,23 @@ export default function Home() {
 
 const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+
+    // 1. Reportar la conversión a Google Ads ANTES de salir de la página
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag('event', 'conversion', {
+          'send_to': 'AW-18299764228/PQ8GCIaG9MocEIT8gJZE',
+          'value': 1.0,
+          'currency': 'USD',
+          'transaction_id': ''
+      });
+    }
+
+    // 2. Preparar el mensaje y abrir WhatsApp
     const mensaje = `Hola, mi nombre es ${formData.nombre}. \nMi correo es: ${formData.email}. \nMi teléfono es: ${formData.telefono}. \n\nNecesito asesoría por lo siguiente: ${formData.motivo}`;
     const whatsappUrl = `https://wa.me/50493812079?text=${encodeURIComponent(mensaje)}`;
     window.open(whatsappUrl, '_blank');
+    
+    // 3. Limpiar el formulario
     setFormData({ nombre: "", email: "", telefono: "", motivo: "" });
   };
 
